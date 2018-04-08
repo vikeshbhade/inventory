@@ -1,0 +1,26 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+nav{
+	margin-bottom: 70px;
+}
+.column{
+	margin-top: 150px;
+	max-width: 450px;
+
+}
+section{
+		margin-top: 100px;
+}
+footer{
+    margin-top:200px;
+    border-top:20px solid #F9FAFC;
+    background-repeat:repeat-x;
+    background-position:left bottom;
+    background-size:contain;
+    background-color:#F9FAFC;
+    width:100%;
+    float:left;
+    clear:both;
+
+}
