@@ -30,14 +30,12 @@ if(isset($_POST['upload'])){
    $model = new Model;
 
     $output_dir = "uploads/";
-    $recordCheck = $model->checkUpload($registration);
+    
     
         
         if(isset($_FILES["myfile"]))
         {
-           
-            $ret = array();
-            
+
             $error =$_FILES["myfile"]["error"];
 
        

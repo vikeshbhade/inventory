@@ -22,8 +22,8 @@
   <nav>
     <div class="ui fixed inverted menu" id="menu">
       <div class="ui container">
-        <a href="#" class="header item">
-          <img class="logo" src="assets/images/logo.png" alt="Brand Image">
+        <a href="index.php" class="header item">
+          <img class="logo" src="assets/images/log.png" alt="Brand Image">
             Inventory
         </a>
         <a href="<?php $_SERVER['PHP_SELF']; ?>?page=manufacturer" class="item">Manufacturer</a>
