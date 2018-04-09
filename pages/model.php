@@ -57,7 +57,7 @@ include ('classes/action.php');
                 </div>
               </div>
               <div class="field">
-                <div id="fileuploader">Upload</div>
+                <div id="fileuploader" name="fileuploader[]">Upload</div>
               </div>
               <div class="ui submit button" id="send" name="upload">Submit</div>
                 <!-- <button class="ui button" name="upload" id="send">Submit</button> -->

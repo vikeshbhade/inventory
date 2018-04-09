@@ -28,17 +28,17 @@ if(  !class_exists('Database') ) {
 
     public function checkImgUpload($registration){
         $this->registration = $registration;
-        $this->db->query("SELECT * FROM model WHERE registration_number=:registration AND img2='NULL'");
-        $this->db->bind(':registration',$this->registration);
+        echo $sql = "SELECT * FROM model WHERE registration_number= '$this->registration'";
+        $this->db->query("SELECT * FROM model WHERE registration_number= '$this->registration'");
+        //$this->db->bind(':registration',$this->registration);
         return $this->db->resultSet();
     }
 
     public function updateRecord($fileName,$registration){
         $this->img2 = $fileName;
         $this->registration = $registration;
-        $this->db->query("UPDATE model SET img2=:img2 WHERE registration_number=:registration");
-        $this->db->bind(':img2', $this->img2);
-        $this->db->bind(':registration', $this->registration);
+        $this->db->query("UPDATE model SET img2='$this->img2' WHERE registration_number='$this->registration'");
+        
         return $this->db->execute();
     }
 
@@ -46,7 +46,7 @@ if(  !class_exists('Database') ) {
         $this->name = $name;
         $this->color = $color;
         $this->year = $year;
-        $this->registration = $name;
+        $this->registration = $registration;
         $this->note = $note;
         $this->manufacturer = $manufacturer;
         $this->img1 = $fileName;

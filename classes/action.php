@@ -31,7 +31,7 @@ if(isset($_POST['upload'])){
 
     $output_dir = "uploads/";
     $recordCheck = $model->checkUpload($registration);
-    if(empty($recordCheck)){
+    
         
         if(isset($_FILES["myfile"]))
         {
@@ -39,6 +39,8 @@ if(isset($_POST['upload'])){
             $ret = array();
             
             $error =$_FILES["myfile"]["error"];
+
+            
             
             if(!is_array($_FILES["myfile"]["name"])) //single file
             {
@@ -46,22 +48,20 @@ if(isset($_POST['upload'])){
                 move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir.$fileName);
                 $ret[]= $fileName;
                 $status =  $model->checkImgUpload($registration);
+                
                     if(!empty($status)){
                         $model->updateRecord($fileName,$registration);
                         echo "Files succesfully updated";
                     }
                     else{
-                        $model->setOneRecord($name, $color, $year, $manufacturer, $registration, $note, $fileName);
+                      
+                       $model->setOneRecord($name, $color, $year, $manufacturer, $registration, $note, $fileName);
                     }
+					echo "File uploaded Successfully";
             }
                         
-            //echo json_encode($ret);
         }
-    }
-    else{
-        echo "Registration number already Exists.";
-    }
-
+    
 }
 
 if(isset($_POST['cart'])){
