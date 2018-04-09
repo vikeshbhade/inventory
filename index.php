@@ -18,6 +18,21 @@
         break;
        }
     }
+    else{
+        ?>
+        <section>
+            <div class="ui container">
+                <div class="ui segment">
+                    <ul class="ui list">
+                        <li>Click On <b>Manufacturer</b> to add Manufacturers</li>
+                        <li>Click On <b>Model</b> to add Models</li>
+                        <li>Click On <b>Inventory</b> to view Inventory Details</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <?php
+    }
 ?>
 
 

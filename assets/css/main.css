@@ -1,5 +1,10 @@
+
 body{
 	font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    margin-top: 200px !important;
 }
 nav{
 	margin-bottom: 70px;
