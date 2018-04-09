@@ -40,9 +40,8 @@ if(isset($_POST['upload'])){
             
             $error =$_FILES["myfile"]["error"];
 
-            
-            
-            if(!is_array($_FILES["myfile"]["name"])) //single file
+       
+            if(!is_array($_FILES["myfile"]["name"])) 
             {
                 $fileName = $_FILES["myfile"]["name"];
                 move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir.$fileName);
