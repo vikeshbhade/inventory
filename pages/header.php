@@ -6,9 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Car Inventory</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"/>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Jura:100,300,400,500,600,700" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+      <link href="assets/css/geek.css" rel="stylesheet">
       <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="assets/css/main.css" rel="stylesheet" type="text/css">
       

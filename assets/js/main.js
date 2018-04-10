@@ -7,7 +7,7 @@ $(document).ready(function()
     var year = $("#year").val();
     var registration = $("#registration").val();
     var note = $("#note").val();
-    var i = new Date($.now());
+    
     var manName="";
 
     $(document).on('change', '.manufacturer', function(){

@@ -21,7 +21,6 @@ if(  !class_exists('Database') ) {
 
     public function checkImgUpload($registration){
         $this->registration = $registration;
-        echo $sql = "SELECT * FROM model WHERE registration_number= '$this->registration'";
         $this->db->query("SELECT * FROM model WHERE registration_number= '$this->registration'");
         return $this->db->resultSet();
     }
