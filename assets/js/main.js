@@ -15,7 +15,7 @@ $(document).ready(function()
     });
 
     var uploadObj = $("#fileuploader").uploadFile({
-      url:"../../inventory/classes/action.php",
+      url:"classes/action.php",
       fileName: "myfile",
       acceptFiles:"image/*",
       autoSubmit: false,
@@ -47,7 +47,7 @@ $(document).ready(function()
       var id = this.id;
       
       $.ajax({
-        url: '../../inventory/classes/action.php',
+        url: 'classes/action.php',
         type:'post',
         data: {id: id,cart: 1},
         success: function(data){
@@ -70,7 +70,7 @@ $(document).ready(function()
     $("#sold").click(function(){
       id= this.name;
       $.ajax({
-        url: '../../inventory/classes/action.php',
+        url: 'classes/action.php',
         type: 'post',
         data: {id : id, remove:1},
         success: function(data){
